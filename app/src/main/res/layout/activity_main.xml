@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/date1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập Ngày 1 (dd/MM/yyyy)"
+        android:minHeight="50dp"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/date2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date1"
+        android:layout_marginTop="16dp"
+        android:hint="Nhập Ngày 2 (dd/MM/yyyy)"
+        android:minHeight="50dp"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date2"
+        android:layout_marginTop="16dp"
+        android:text="Tính Ngày" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCalculate"
+        android:layout_marginTop="16dp"
+        android:text="Số ngày cách nhau là: "
+        android:textSize="18sp" />
+
+</RelativeLayout>
